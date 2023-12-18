@@ -259,7 +259,7 @@ button {
 }
 
 .link {
-  --type: transparent;
+  /* --type: transparent; */
   --fill: transparent;
   display: flex;
   place-items: center;
