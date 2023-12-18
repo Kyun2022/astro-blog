@@ -10,7 +10,7 @@ export function slugify(text) {
 }
 
 export function formatDate(date) {
-  return new Date(date).toLocaleDateString('ja-JP', {
+  return new Date(date).toLocaleDateString('en-US', {
     timeZone: 'UTC',
   });
 }
@@ -51,5 +51,5 @@ export function formatBlogPosts(
   if (typeof limit === 'number') {
     return filteredPosts.slice(0, limit);
   }
-  return filteredPosts
+  return filteredPosts;
 }

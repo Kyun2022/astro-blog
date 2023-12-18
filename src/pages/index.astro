@@ -1,11 +1,11 @@
 ---
 // component imports
 import MainLayout from '../layouts/MainLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import Link from '../components/Link.astro';
 
 // utils imports
 import { formatBlogPosts } from '../js/utils';
-import PostCard from '../components/PostCard.astro';
-import Link from '../components/Link.astro';
 
 const allPosts = await Astro.glob('./blog/*.md');
 const formattedPosts = formatBlogPosts(allPosts, {
@@ -32,10 +32,8 @@ const formattedPosts = formatBlogPosts(allPosts, {
     <div class="content">
       <h1 class="h1">My Blog</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit eveniet
-        iure, enim recusandae aliquid amet culpa corrupti. Voluptatibus, dolor,
-        veniam rerum, laborum enim possimus non unde eaque magnam molestias
-        ullam.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
+        tempora beatae mollitia architecto optio sapiente repellendus natus.
       </p>
       <Link href="/about/" style="secondary" text="👋 About Me" />
     </div>
