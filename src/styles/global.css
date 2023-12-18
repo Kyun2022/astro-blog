@@ -260,7 +260,9 @@ button {
 
 .link {
   /* --type: transparent; */
-  --fill: transparent;
+  /* --fill: transparent; */
+  --type: white;
+  --fill: navy;
   display: flex;
   place-items: center;
   gap: var(--space-2xs);
